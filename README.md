@@ -32,7 +32,7 @@ Editable permissions with a clear display of current settings.
 Permissions Management
 
 Dynamic assignment with real-time updates on UI.
-![image](![](image.png))
+![image](![alt text](image.png))
 
 Contributor
 Rishabh Mishra
