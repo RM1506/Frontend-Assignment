@@ -1,0 +1,58 @@
+export const permissions = [
+  { id: 'read_users', name: 'Read Users', description: 'View user information' },
+  { id: 'write_users', name: 'Write Users', description: 'Create and edit users' },
+  { id: 'delete_users', name: 'Delete Users', description: 'Remove users from the system' },
+  { id: 'manage_roles', name: 'Manage Roles', description: 'Create and modify roles' },
+  { id: 'view_analytics', name: 'View Analytics', description: 'Access system analytics' },
+];
+
+export const roles = [
+  {
+    id: 'admin',
+    name: 'Administrator',
+    description: 'Full system access',
+    permissions: permissions.map(p => p.id),
+  },
+  {
+    id: 'manager',
+    name: 'Manager',
+    description: 'User management and analytics',
+    permissions: ['read_users', 'write_users', 'view_analytics'],
+  },
+  {
+    id: 'viewer',
+    name: 'Viewer',
+    description: 'Read-only access',
+    permissions: ['read_users', 'view_analytics'],
+  },
+];
+
+export const initialUsers = [
+  {
+    id: '1',
+    name: 'Pawan Sharma',
+    email: 'ps@example.com',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces',
+    roleId: 'admin',
+    status: 'active',
+    createdAt: '2024-01-15',
+  },
+  {
+    id: '2',
+    name: 'Rishabh Mishra',
+    email: 'rm@example.com',
+    avatar: 'data:image/jpeg;base64,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',
+    roleId: 'manager',
+    status: 'active',
+    createdAt: '2024-02-01',
+  },
+  {
+    id: '3',
+    name: 'Manu',
+    email: 'manu@example.com',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces',
+    roleId: 'viewer',
+    status: 'active',
+    createdAt: '2024-02-15',
+  },
+];
