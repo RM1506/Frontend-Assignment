@@ -1,4 +1,4 @@
-# Role-Based-Access-Control-RBAC-UI---Rishabh Mishra
+# Role-Based-Access-Control-RBAC
 The Role-Based Access Control (RBAC) User Interface project is designed to create a secure and intuitive admin dashboard for managing users, roles, and permissions efficiently. This project implements the core principles of RBAC by allowing administrators to assign roles, define permissions, and manage user access seamlessly.
 
 Overview
@@ -33,7 +33,3 @@ Permissions Management
 
 Dynamic assignment with real-time updates on UI.
 ![image](![alt text](image.png))
-
-Contributor
-Rishabh Mishra
-Frontend Developer Intern
